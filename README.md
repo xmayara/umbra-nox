@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Umbra Nox
 
 Jogo de investigação de clima sombrio, construído sobre o roteiro **PECCATORES**.
@@ -10,7 +11,7 @@ caso** apontando o culpado.
 - **Frontend:** HTML, CSS e JavaScript (telas e interface).
 - **Backend:** Python + Flask (enigmas, diálogos e lógica dos casos).
 
-> *"Nem toda evidência revela a verdade."*
+ *"Nem toda evidência revela a verdade."*
 
 ---
 
@@ -38,7 +39,7 @@ Android e instale-o; talvez seja necessário permitir a instalação pelo app qu
 abriu o arquivo. É preciso conexão à internet na primeira compilação para o
 Gradle baixar as ferramentas e dependências.
 
----
+
 
 ## Como jogar
 
@@ -63,7 +64,7 @@ Gradle baixar as ferramentas e dependências.
 Há **Salvar** (na mesa e no arquivo) e **Continuar** (no menu), com auto-save ao
 coletar evidências.
 
----
+
 
 ## A série PECCATORES
 
@@ -89,7 +90,7 @@ O **Dr. Adrian Kael** (médico-legista) é o fio condutor oculto da série: come
 como aliado confiável e, caso a caso, deixa sementes de suspeita, até o confronto
 final no Caso 010.
 
----
+
 
 ## Estrutura
 
@@ -109,3 +110,7 @@ Umbra Nox/
 ├── requirements.txt
 └── README.md
 ```
+
+# umbra-nox
+Umbra Nox é um jogo de investigação e mistério focado em narrativa, no qual os jogadores solucionam casos criminais, analisam evidências, interrogam suspeitos e desvendam uma sombria conspiração que conecta todos os acontecimentos..
+
