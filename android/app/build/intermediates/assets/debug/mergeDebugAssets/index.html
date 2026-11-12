@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umbra Nox — Caso 001: O Relógio Parado</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="vinheta"></div>
+
+  <!-- Balão de tutorial (só no Caso 001) -->
+  <div id="tutorial-balao" class="tutorial-balao oculto">
+    <span class="tutorial-rotulo">TUTORIAL</span>
+    <p id="tutorial-texto"></p>
+    <button class="link-btn" id="tutorial-ok">Entendi</button>
+  </div>
+
+  <!-- ============ ABERTURA ============ -->
+  <section class="tela ativa" id="tela-abertura" data-tela="abertura">
+    <div class="centro">
+      <p class="confidencial">Arquivo confidencial — Acesso restrito</p>
+      <p class="epigrafe">
+        Toda mentira deixa vestígios. E toda verdade cobra um preço, mas há
+        segredos que deveriam permanecer enterrados.
+      </p>
+      <button class="link-btn" data-ir="menu">Continuar</button>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="tela" id="tela-menu" data-tela="menu">
+    <div class="centro">
+      <h1 class="titulo">UMBRA NOX</h1>
+      <p class="subtitulo">Nem toda evidência revela a verdade</p>
+      <nav class="menu">
+        <button class="link-btn" id="btn-continuar">Continuar</button>
+        <button class="link-btn" data-ir="intro1">Novo Jogo</button>
+        <button class="link-btn" id="btn-opcoes">Opções</button>
+      </nav>
+      <p class="menu-feedback" id="menu-feedback"></p>
+      <div class="opcoes-box oculto" id="caixa-opcoes">
+        <label><input type="checkbox" id="opt-atmosfera" checked /> Efeitos de atmosfera</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTRO 1 ============ -->
+  <section class="tela" id="tela-intro1" data-tela="intro1">
+    <div class="centro">
+      <h1 class="titulo pequeno">UMBRA NOX</h1>
+      <p class="frase-grande">Nem toda evidência revela a verdade</p>
+      <p class="frase-pequena">Vamos aquecer antes de começar</p>
+      <button class="link-btn" data-ir="intro2">Prosseguir</button>
+    </div>
+  </section>
+
+  <!-- ============ INTRO 2 ============ -->
+  <section class="tela" id="tela-intro2" data-tela="intro2">
+    <div class="centro">
+      <p class="frase-grande">Você será capaz de desvendar toda a verdade oculta?</p>
+      <button class="link-btn" data-ir="enigmas">Começar o aquecimento</button>
+    </div>
+  </section>
+
+  <!-- ============ ENIGMAS ============ -->
+  <section class="tela" id="tela-enigmas" data-tela="enigmas">
+    <div class="centro enigma-wrap">
+      <p class="enigma-progresso" id="enigma-progresso">Enigma 1 de 6</p>
+      <p class="enigma-texto" id="enigma-texto"></p>
+      <p class="enigma-dica" id="enigma-dica"></p>
+      <form id="form-enigma" autocomplete="off">
+        <input type="text" id="enigma-input" placeholder="Digite sua resposta..."
+               aria-label="Resposta do enigma" />
+        <button type="submit" class="link-btn">Responder</button>
+      </form>
+      <p class="feedback" id="enigma-feedback"></p>
+    </div>
+  </section>
+
+  <!-- ============ TRANSIÇÃO ============ -->
+  <section class="tela" id="tela-transicao" data-tela="transicao">
+    <div class="centro">
+      <p class="frase-grande">
+        As respostas abriram a porta. Seis enigmas resolvidos. Agora, investigue
+        o que ficou nas sombras.
+      </p>
+      <button class="link-btn destaque" data-ir="arquivocasos">Abrir o Arquivo de Casos</button>
+    </div>
+  </section>
+
+  <!-- ============ ARQUIVO DE CASOS (seleção) ============ -->
+  <section class="tela mesa" id="tela-arquivocasos" data-tela="arquivocasos">
+    <header class="topo">
+      <span class="marca">U M B R A &nbsp; N O X</span>
+      <span class="arquivo-titulo-topo">ARQUIVO DE CASOS</span>
+      <div class="topo-acoes">
+        <span class="salvar-feedback" id="salvar-feedback-casos"></span>
+        <button class="link-btn salvar-btn" id="btn-salvar-casos">Salvar</button>
+      </div>
+    </header>
+    <div class="painel ativo">
+      <div class="serie-cabecalho">
+        <h2 class="painel-titulo">Série de homicídios</h2>
+        <p class="painel-sub">
+          Dez casos. Marcas sem explicação surgem em diferentes pontos da série.
+          Cruze os fragmentos para descobrir o que elas formam.
+        </p>
+        <div class="peccatores" id="peccatores"></div>
+      </div>
+      <div class="casos-grade" id="casos-grade"></div>
+    </div>
+  </section>
+
+  <!-- ============ MESA DO INVESTIGADOR ============ -->
+  <section class="tela mesa" id="tela-caso" data-tela="caso">
+    <header class="topo">
+      <span class="marca">U M B R A &nbsp; N O X</span>
+      <nav class="abas">
+        <button class="aba ativa" data-aba="dossie">DOSSIÊ</button>
+        <button class="aba" data-aba="arquivo">EVIDÊNCIAS</button>
+        <button class="aba" data-aba="timeline">LINHA DO TEMPO</button>
+        <button class="aba" data-aba="truthtrace">TRUTHTRACE</button>
+      </nav>
+      <div class="topo-acoes">
+        <span class="salvar-feedback" id="salvar-feedback"></span>
+        <button class="link-btn voltar" data-ir="arquivocasos">⌂ Casos</button>
+        <button class="link-btn salvar-btn" id="btn-salvar">Salvar</button>
+      </div>
+    </header>
+
+    <!-- Aba: Dossiê -->
+    <div class="painel ativo" id="painel-dossie">
+      <div class="caso-cabecalho">
+        <p class="caso-id" id="caso-id"></p>
+        <p class="caso-objetivo"><b>Objetivo:</b> <span id="caso-objetivo"></span></p>
+      </div>
+      <div class="dossie">
+        <div class="dossie-foto" aria-hidden="true"><div class="silhueta"></div></div>
+        <div class="dossie-info">
+          <span class="rotulo-vitima">VÍTIMA</span>
+          <h2 id="vitima-nome"></h2>
+          <p class="vitima-sub" id="vitima-sub"></p>
+          <p class="vitima-citacao" id="vitima-citacao"></p>
+          <p class="vitima-bio" id="vitima-bio"></p>
+          <ul class="vitima-dados" id="vitima-dados"></ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aba: Arquivo (evidências, suspeitos, peritos) -->
+    <div class="painel" id="painel-arquivo">
+      <h3 class="secao-titulo">Evidências coletadas</h3>
+      <div class="evidencias" id="lista-evidencias"></div>
+
+      <h3 class="secao-titulo">Pessoas de interesse</h3>
+      <div class="suspeitos" id="lista-suspeitos"></div>
+
+      <h3 class="secao-titulo">Equipe técnica</h3>
+      <div class="suspeitos" id="lista-peritos"></div>
+    </div>
+
+    <!-- Aba: Linha do Tempo -->
+    <div class="painel" id="painel-timeline">
+      <div class="timeline-head">
+        <div>
+          <h2 class="painel-titulo">Linha do Tempo</h2>
+          <p class="painel-sub">
+            Organize os acontecimentos, compare depoimentos e identifique
+            inconsistências.
+          </p>
+        </div>
+        <div class="legenda">
+          <span class="leg registro">Registro</span>
+          <span class="leg depoimento">Depoimento</span>
+          <span class="leg evidencia">Evidência</span>
+          <span class="leg contradicao">Contradição</span>
+        </div>
+      </div>
+      <ol class="timeline" id="timeline-lista"></ol>
+      <p class="timeline-nota">Nem tudo o que está na linha do tempo é o que realmente aconteceu.</p>
+    </div>
+
+    <!-- Aba: TruthTrace -->
+    <div class="painel" id="painel-truthtrace">
+      <div class="tt-grid">
+        <div class="tt-main">
+          <h2 class="painel-titulo">TruthTrace</h2>
+          <p class="painel-sub">
+            Relacione as evidências, teste suas hipóteses e descubra o que
+            realmente aconteceu.
+          </p>
+
+          <div class="tt-hipotese-atual">
+            <span class="tt-rotulo">Hipótese em foco</span>
+            <p id="tt-hipotese-texto">Selecione uma hipótese ao lado.</p>
+          </div>
+
+          <h3 class="secao-titulo">Evidências relacionadas</h3>
+          <div class="tt-evidencias" id="tt-evidencias"></div>
+
+          <div class="tt-proximo">
+            <span class="tt-rotulo">Próximo passo sugerido</span>
+            <p id="tt-proximo-texto"></p>
+          </div>
+
+          <div class="tt-acusacao">
+            <span class="tt-rotulo">Fechar o caso</span>
+            <p class="tt-acusacao-ajuda">
+              Reúna as três provas-chave e aponte o responsável.
+            </p>
+            <div class="tt-acusar-linha">
+              <select id="acusar-select" aria-label="Escolher quem acusar"></select>
+              <button class="link-btn destaque" id="btn-acusar">Acusar</button>
+            </div>
+            <p class="feedback" id="acusar-feedback"></p>
+          </div>
+        </div>
+
+        <aside class="tt-lateral">
+          <h3 class="secao-titulo">Hipóteses do caso</h3>
+          <ul class="tt-hipoteses" id="tt-hipoteses"></ul>
+
+          <h3 class="secao-titulo">Status da investigação</h3>
+          <div class="tt-status">
+            <div class="tt-anel" id="tt-anel"><span id="tt-anel-pct">0%</span></div>
+            <ul class="tt-metricas">
+              <li>Evidências <b id="tt-ev-coletadas">0 / 0</b></li>
+              <li>Provas-chave <b id="tt-provas">0 / 3</b></li>
+              <li>Contradições <b id="tt-contradicoes">0</b></li>
+            </ul>
+          </div>
+
+          <blockquote class="tt-citacao" id="tt-citacao"></blockquote>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTERROGATÓRIO / CONVERSA ============ -->
+  <section class="tela interrogatorio" id="tela-interrogatorio" data-tela="interrogatorio">
+    <header class="topo">
+      <span class="marca" id="interr-marca">INTERROGATÓRIO</span>
+      <button class="link-btn voltar" data-ir="caso">← Voltar à mesa</button>
+    </header>
+    <div class="interr-wrap">
+      <div class="interr-cabecalho">
+        <h2 id="interr-nome"></h2>
+        <p id="interr-papel"></p>
+        <p class="interr-retrato" id="interr-retrato"></p>
+        <div class="medidor" id="medidor">
+          <span class="medidor-rotulo">Pressão</span>
+          <div class="medidor-barra"><div class="medidor-fill" id="medidor-fill"></div></div>
+        </div>
+      </div>
+      <div class="dialogo" id="dialogo"></div>
+      <div class="perguntas-prontas" id="perguntas-prontas" aria-label="Perguntas disponíveis"></div>
+    </div>
+  </section>
+
+  <!-- ============ DESFECHO ============ -->
+  <section class="tela" id="tela-desfecho" data-tela="desfecho">
+    <div class="centro desfecho-wrap">
+      <p class="confidencial" id="desfecho-selo">CASO ENCERRADO</p>
+      <h2 class="titulo pequeno" id="desfecho-titulo"></h2>
+      <p class="desfecho-texto" id="desfecho-texto"></p>
+      <div class="desfecho-acoes">
+        <button class="link-btn" data-ir="arquivocasos">Arquivo de Casos</button>
+        <button class="link-btn destaque oculto" id="btn-proximo-caso">Próximo caso →</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/game.js"></script>
+  <script src="js/interrogatorio.js"></script>
+</body>
+</html>

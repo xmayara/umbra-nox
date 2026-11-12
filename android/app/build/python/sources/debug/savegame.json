@@ -1,0 +1,12 @@
+{
+  "versao": 2,
+  "enigmaAtual": 6,
+  "resolvidos": [
+    "001",
+    "002"
+  ],
+  "casoId": "003",
+  "evidenciasDescobertas": [],
+  "contradicoes": [],
+  "hipoteseAtual": "h1"
+}

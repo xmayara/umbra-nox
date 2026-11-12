@@ -1,0 +1,539 @@
+{
+  "versao": 3,
+  "enigmaAtual": 6,
+  "resolvidos": [
+    "001",
+    "002",
+    "003",
+    "004"
+  ],
+  "casoId": "005",
+  "evidenciasDescobertas": [],
+  "contradicoes": [],
+  "hipoteseAtual": "h1",
+  "conversas": {
+    "004:irene": {
+      "estado": {
+        "abertura": "Servi ao Sr. Figueredo por quinze anos. Vi coisas que não devia.",
+        "caso_id": "004",
+        "confessou": false,
+        "contradicoes": [],
+        "evidencias": [
+          "denuncias",
+          "dossie_irene"
+        ],
+        "nervosismo": 4,
+        "nome": "Irene Souto",
+        "papel": "Secretária da instituição",
+        "perguntas": [],
+        "perguntas_respondidas": [
+          "alibi",
+          "abuso",
+          "dossie",
+          "daniel"
+        ],
+        "pid": "irene",
+        "retrato": "Cansada, discreta, guarda segredos.",
+        "tipo": "suspeito",
+        "topicos_abordados": {
+          "abuso": 2,
+          "alibi": 2,
+          "daniel": 1,
+          "dossie": 2
+        }
+      },
+      "mensagens": [
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "Servi ao Sr. Figueredo por quinze anos. Vi coisas que não devia.",
+          "hora": "17:41"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Onde você estava na noite do crime?",
+          "hora": "17:41"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "Tranquei tudo às nove e fui embora. Ele ficou.",
+          "hora": "17:41"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Tem certeza?",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "Que Deus me perdoe o silêncio.",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: Onde você estava na noite do crime?",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "Eu não aguentava mais aquele homem, mas não o matei.",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Havia abuso de poder envolvido?",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "Ele arquivava denúncias contra os poderosos. Chamava isso de 'proteger a obra'.",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: Havia abuso de poder envolvido?",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "Tinha um dossiê para controlar quem ousasse falar.",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Existe algum dossiê guardado?",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "Eu peguei uma coisa, com medo...",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: Existe algum dossiê guardado?",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "Guardei o dossiê dele. É a prova de tudo o que ele fazia.",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Fale sobre: daniel",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Irene Souto",
+          "texto": "O diácono Daniel brigou feio com ele. A família do Daniel foi destruída por uma denúncia engavetada.",
+          "hora": "17:42"
+        }
+      ]
+    },
+    "004:paulo": {
+      "estado": {
+        "abertura": "Sou um benfeitor, não um suspeito. Sejam rápidos.",
+        "caso_id": "004",
+        "confessou": false,
+        "contradicoes": [],
+        "evidencias": [
+          "denuncias",
+          "dossie_irene"
+        ],
+        "nervosismo": 2,
+        "nome": "Paulo Crê",
+        "papel": "Doador influente da instituição",
+        "perguntas": [],
+        "perguntas_respondidas": [
+          "alibi",
+          "denuncia",
+          "motivo"
+        ],
+        "pid": "paulo",
+        "retrato": "Arrogante, impaciente.",
+        "tipo": "suspeito",
+        "topicos_abordados": {
+          "alibi": 1,
+          "denuncia": 2,
+          "motivo": 1
+        }
+      },
+      "mensagens": [
+        {
+          "tipo": "suspeito",
+          "autor": "Paulo Crê",
+          "texto": "Sou um benfeitor, não um suspeito. Sejam rápidos.",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Onde você estava na noite do crime?",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Paulo Crê",
+          "texto": "Em um jantar de gala. Cem pessoas me viram.",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Fale sobre: denuncia",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Paulo Crê",
+          "texto": "Samuel me devia favores, não o contrário.",
+          "hora": "17:42"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: Fale sobre: denuncia",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Paulo Crê",
+          "texto": "Sim, ele engavetou uma denúncia que me citava. E daí?",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Você tinha algum motivo contra a vítima?",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Paulo Crê",
+          "texto": "Eu financiava o homem. Morto, ele não me serve. Por que eu o mataria?",
+          "hora": "17:43"
+        }
+      ]
+    },
+    "004:perito_cena": {
+      "estado": {
+        "abertura": "A sala estava arrumada demais para uma cena de crime. Pergunte.",
+        "caso_id": "004",
+        "confessou": false,
+        "contradicoes": [],
+        "evidencias": [
+          "denuncias",
+          "dossie_irene",
+          "documentos_reorg",
+          "registro_visitas"
+        ],
+        "nervosismo": 0,
+        "nome": "Perita Sofia Mendes",
+        "papel": "Perícia criminal — cena do crime",
+        "perguntas": [],
+        "perguntas_respondidas": [
+          "documentos",
+          "entrada",
+          "golpe"
+        ],
+        "pid": "perito_cena",
+        "retrato": "Objetiva, luvas nas mãos, anota tudo em um caderno.",
+        "tipo": "pericia",
+        "topicos_abordados": {
+          "documentos": 1,
+          "entrada": 1,
+          "golpe": 1
+        }
+      },
+      "mensagens": [
+        {
+          "tipo": "suspeito",
+          "autor": "Perita Sofia Mendes",
+          "texto": "A sala estava arrumada demais para uma cena de crime. Pergunte.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "E os documentos remexidos?",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Perita Sofia Mendes",
+          "texto": "Os arquivos foram reorganizados com método, não revirados. Quem matou procurava algo específico — ou plantava.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Fale sobre: entrada",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Perita Sofia Mendes",
+          "texto": "A porta lateral foi usada. E há uma página trocada no livro de visitas — a original diz quem esteve com ele por último.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Fale sobre: golpe",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Perita Sofia Mendes",
+          "texto": "Um golpe único, preciso, na nuca. Sem hesitação. A causa fica com o legista.",
+          "hora": "17:43"
+        }
+      ]
+    },
+    "004:legista": {
+      "estado": {
+        "abertura": "Examinei Samuel. Um caso limpo, à primeira vista. Pergunte.",
+        "caso_id": "004",
+        "confessou": false,
+        "contradicoes": [],
+        "evidencias": [
+          "denuncias",
+          "dossie_irene",
+          "documentos_reorg",
+          "registro_visitas",
+          "causa_morte",
+          "programa_medico"
+        ],
+        "nervosismo": 0,
+        "nome": "Dr. Adrian Kael",
+        "papel": "Médico-legista · Departamento de Medicina Forense",
+        "perguntas": [],
+        "perguntas_respondidas": [
+          "causa",
+          "programa",
+          "quem"
+        ],
+        "pid": "legista",
+        "retrato": "Preciso, educado, pausado. Raramente afirma algo sem uma justificativa técnica. Mãos impecavelmente limpas.",
+        "tipo": "legista",
+        "topicos_abordados": {
+          "causa": 1,
+          "programa": 1,
+          "quem": 1
+        }
+      },
+      "mensagens": [
+        {
+          "tipo": "suspeito",
+          "autor": "Dr. Adrian Kael",
+          "texto": "Examinei Samuel. Um caso limpo, à primeira vista. Pergunte.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Qual foi a causa da morte?",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Dr. Adrian Kael",
+          "texto": "Golpe único na nuca, sem sinais de luta. Eu trataria a cena reorganizada como preliminar — não a elevaria a prova ainda.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "O que era o programa institucional?",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Dr. Adrian Kael",
+          "texto": "Há referências a um programa de assistência médica com participantes sob códigos. Papelada antiga do departamento, imagino. Nada deste caso.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Quem o senhor acha que fez isso?",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Dr. Adrian Kael",
+          "texto": "Alguém com acesso e rancor. Eu não me fixaria no benfeitor óbvio.",
+          "hora": "17:43"
+        }
+      ]
+    },
+    "004:daniel": {
+      "estado": {
+        "abertura": "Eu servi ao lado dele por anos. É triste o que aconteceu.",
+        "caso_id": "004",
+        "confessou": true,
+        "contradicoes": [],
+        "evidencias": [
+          "denuncias",
+          "dossie_irene",
+          "documentos_reorg",
+          "registro_visitas",
+          "causa_morte",
+          "programa_medico",
+          "ultimato"
+        ],
+        "nervosismo": 8,
+        "nome": "Daniel Mares",
+        "papel": "Diácono · antigo aliado de Samuel",
+        "perguntas": [],
+        "perguntas_respondidas": [
+          "alibi",
+          "familia",
+          "documentos",
+          "__confronto__"
+        ],
+        "pid": "daniel",
+        "retrato": "Contido, voz baixa, olhar de quem carrega um luto.",
+        "tipo": "suspeito",
+        "topicos_abordados": {
+          "alibi": 3,
+          "documentos": 2,
+          "familia": 3
+        }
+      },
+      "mensagens": [
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "Eu servi ao lado dele por anos. É triste o que aconteceu.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Onde você estava na noite do crime?",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "Estava em casa, orando. Sozinho.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: Onde você estava na noite do crime?",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "A porta lateral? Eu tinha a chave, mas não entrei.",
+          "hora": "17:43"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: Onde você estava na noite do crime?",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "Já respondi. Deixe minha família fora disso.",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Isso afetou a sua família?",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "Ele engavetou a denúncia que teria salvado meu filho.",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: Isso afetou a sua família?",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "Chamou de 'sacrifício pela obra'. Chamei de covardia.",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: Isso afetou a sua família?",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "Perdi tudo. E ele dormia tranquilo.",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "E os documentos remexidos?",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "Não mexi nos papéis dele.",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "Continuar: E os documentos remexidos?",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "suspeito",
+          "autor": "Daniel Mares",
+          "texto": "Se alguém remexeu naquilo, procurava se livrar de um segredo. Não fui eu.",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "detetive",
+          "autor": "Detetive",
+          "texto": "⚠ Confrontar com as provas reunidas",
+          "hora": "17:44"
+        },
+        {
+          "tipo": "confissao",
+          "autor": "CONFISSÃO",
+          "texto": "Sim. O dossiê, o livro de visitas, a mensagem que mandei. Ele destruiu a minha família e dormia como um justo. Fui cobrar o que ele tirou de nós. Ele riu e disse que eu era pó diante da 'obra'. Eu o golpeei. Depois procurei o dossiê que ele usava contra mim e troquei a página do livro. Que Deus me julgue.",
+          "hora": "17:44"
+        }
+      ]
+    }
+  }
+}
