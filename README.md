@@ -1,4 +1,4 @@
-sa# 🕯️ Umbra Nox
+🕯️ Umbra Nox
 
 **Nem toda evidência revela a verdade.**
 
